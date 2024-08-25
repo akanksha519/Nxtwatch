@@ -69,8 +69,8 @@ class TrendingVideos extends Component {
   }
 
   renderLoadingView = () => (
-    <LoaderContainer data-testid="loader">
-      <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
+    <LoaderContainer data-testid='loader'>
+      <Loader type='ThreeDots' color='#0b69ff' height='50' width='50' />
     </LoaderContainer>
   )
 
@@ -116,13 +116,13 @@ class TrendingVideos extends Component {
           const textColor = isDarkTheme ? '#f9f9f9' : '#231f20'
 
           return (
-            <div data-testid="trending">
+            <div data-testid='trending'>
               <Header />
               <NavigationBar />
-              <TrendingContainer testid="trending" bgColor={bgColor}>
+              <TrendingContainer testid='trending' bgColor={bgColor}>
                 <TrendingVideoTitle>
                   <TitleIconContainer>
-                    <HiFire size={35} color="#ff0000" />
+                    <HiFire size={35} color='#ff0000' />
                   </TitleIconContainer>
                   <TrendingText color={textColor}>Trending</TrendingText>
                 </TrendingVideoTitle>

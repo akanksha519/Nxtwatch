@@ -62,7 +62,7 @@ const PlayVideoView = props => {
 
         return (
           <VideoPlayer>
-            <ReactPlayer url={videoDetails.videoUrl} controls width="100%" />
+            <ReactPlayer url={videoDetails.videoUrl} controls width='100%' />
             <PlayVideoTitle color={textColor}>
               {videoDetails.title}
             </PlayVideoTitle>
@@ -75,27 +75,27 @@ const PlayVideoView = props => {
               <PlaySocialButtonsContainer>
                 <BtnContainer>
                   <SocialButton
-                    type="button"
+                    type='button'
                     color={likeIconColor}
                     onClick={onClickLike}
                   >
                     <AiOutlineLike size={25} />
-                    <ButtonText>Like</ButtonText>
+                    Like
                   </SocialButton>
                 </BtnContainer>
                 <BtnContainer>
                   <SocialButton
-                    type="button"
+                    type='button'
                     color={dislikeIconColor}
                     onClick={onClickDislike}
                   >
                     <AiOutlineDislike size={25} />
-                    <ButtonText>Dislike</ButtonText>
+                    Dislike
                   </SocialButton>
                 </BtnContainer>
                 <BtnContainer>
                   <SocialButton
-                    type="button"
+                    type='button'
                     color={saveIconColor}
                     onClick={onClickSave}
                   >
@@ -109,7 +109,7 @@ const PlayVideoView = props => {
             <ChannelContainer>
               <ChannelImage
                 src={videoDetails.profileImageUrl}
-                alt="channel logo"
+                alt='channel logo'
               />
               <ChannelInfo>
                 <ChannelName color={textColor}>{videoDetails.name}</ChannelName>

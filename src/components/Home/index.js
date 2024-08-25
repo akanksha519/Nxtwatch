@@ -150,6 +150,7 @@ class Home extends Component {
                   </BannerLeftPart>
                   <BannerRightPart>
                     <BannerCloseButton
+                      type="button"
                       data-testid="close"
                       onClick={this.onCloseBanner}
                     >
@@ -166,8 +167,9 @@ class Home extends Component {
                     color={textColor}
                   />
                   <SearchIconContainer
-                    testid="searchButton"
+                    data-testid="searchButton"
                     onClick={this.getSearchResults}
+                    type="button"
                   >
                     <AiOutlineSearch size={20} />
                   </SearchIconContainer>
