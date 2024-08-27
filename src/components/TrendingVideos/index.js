@@ -119,7 +119,7 @@ class TrendingVideos extends Component {
             <div data-testid='trending'>
               <Header />
               <NavigationBar />
-              <TrendingContainer testid='trending' bgColor={bgColor}>
+              <TrendingContainer data-testid='trending' bgColor={bgColor}>
                 <TrendingVideoTitle>
                   <TitleIconContainer>
                     <HiFire size={35} color='#ff0000' />
